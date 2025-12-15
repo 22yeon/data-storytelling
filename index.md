@@ -22,19 +22,11 @@
 --
 
 <iframe
-  src="https://public.tableau.com/views/_17657315189090/1?:language=ko-KR&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link"
+  src="https://public.tableau.com/views/_17657315189090/1?:language=ko-KR&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link?:showVizHome=no&embed=true"
   width="100%"
   height="800"
   frameborder="0">
 </iframe>
-
-
-<iframe
-   src="https://public.tableau.com/views/_17657315189090/1?:language=ko-KR&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link"
-  width="100%"
-  height="700">
-</iframe>
---
 
 
 
