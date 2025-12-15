@@ -8,16 +8,38 @@
 
 
 /* =========================================================
-   2. 본문 레이아웃 폭 설정 (본문은 기존보다만 넓힘)
+   2. SUIT 폰트 로드 (CDN)
    ========================================================= */
-/* Tactile 테마의 핵심 병목: .inner */
+@font-face {
+  font-family: 'SUIT';
+  src: url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/SUIT-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+/* =========================================================
+   3. 전체 기본 스타일 (배경 + 본문 폰트)
+   ========================================================= */
+body {
+  background-color: #ffffff;   /* 흰 배경 */
+  font-family: 'SUIT', -apple-system, BlinkMacSystemFont,
+               'Segoe UI', Roboto, 'Apple SD Gothic Neo',
+               'Noto Sans KR', sans-serif;
+  color: #555555;              /* 본문 기본 색 (연한 회색) */
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   4. 본문 레이아웃 폭 설정
+   ========================================================= */
 .inner {
-  width: 1000px;      /* 본문 폭 */
-  max-width: 92vw;    /* 작은 화면 대응 */
+  width: 1000px;
+  max-width: 92vw;
   margin: 0 auto;
 }
 
-/* 메인 콘텐츠 영역 정렬 보정 */
 #main_content,
 section,
 article {
@@ -28,40 +50,52 @@ article {
 
 
 /* =========================================================
-   3. Markdown ### 소제목(h3) 색상 변경
+   5. 헤더 스타일 (진한 회색)
    ========================================================= */
-#main_content h3,
-.inner h3 {
-  color: #000000;     /* 검은색 */
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;      /* 진한 회색 */
+  font-weight: 600;
 }
 
-/* h3 안에 링크가 있을 경우 대비 */
-#main_content h3 a,
-.inner h3 a {
-  color: #000000;
+/* h3는 기존 요청 유지 */
+#main_content h3,
+.inner h3 {
+  color: #333333;
+}
+
+/* 헤더 안에 링크가 있을 경우 */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #333333;
 }
 
 
 /* =========================================================
-   4. iframe만 본문 폭을 벗어나 1800px로 확장
+   6. 본문 텍스트 색상 (헤더보다 연하게)
    ========================================================= */
-/* 기본 iframe 설정 */
-#main_content iframe {
-  display: block;
-  width: 1600px;       /* ✅ iframe 목표 폭 */
-  max-width: 1600px;
-  border: none;
+p,
+li,
+span,
+blockquote {
+  color: #555555;     /* 헤더보다 연한 회색 */
 }
 
-/* 본문(.inner) 중심 기준으로 가운데 정렬 */
+
+/* =========================================================
+   7. iframe만 본문 폭을 벗어나 1800px로 확장
+   ========================================================= */
 #main_content iframe {
+  display: block;
+  width: 1500px;
+  max-width: 1500px;
+  border: none;
+
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* 화면이 1800px보다 작을 경우: 화면 폭에 맞춤 */
-@media only screen and (max-width: 1600px) {
+/* 화면이 1800px보다 작을 경우 */
+@media only screen and (max-width: 1500px) {
   #main_content iframe {
     width: 100vw;
     max-width: 100vw;
@@ -70,7 +104,7 @@ article {
 
 
 /* =========================================================
-   5. 모바일 구간: Tactile 기본 동작 유지
+   8. 모바일 구간 (Tactile 기본 동작 유지)
    ========================================================= */
 @media only screen and (max-width: 767px) {
   .inner,
