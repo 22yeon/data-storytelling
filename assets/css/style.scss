@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ✅ 페이지 본문 폭 넓히기 (기본 620px → 더 넓게) */
+.inner {
+  width: 1100px;      /* 원하는 값으로 조절 */
+  max-width: 92vw;    /* 화면이 작을 땐 자동으로 줄어들게 */
+  margin: 0 auto;
+}
+
+/* ✅ 모바일 구간은 원래 테마처럼 퍼센트 유지 */
+@media only screen and (max-width: 767px) {
+  .inner {
+    width: 94%;
+    max-width: 94%;
+  }
+}
