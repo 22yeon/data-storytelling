@@ -6,7 +6,9 @@
 ‘중퇴’ 및 ‘학교 밖 청소년’에 대한 사회적 인식의 변화를 탐색한다.
 <br />
 <br />
+
 ---
+
 <br />
 <br />
 ## 용어 정의 및 배경
@@ -20,7 +22,7 @@
 <br />
 <iframe
   src="https://public.tableau.com/views/_17657855902910/sheet0?:language=ko-KR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link?:showVizHome=no&embed=true"
-  width="60%"
+  width="100%"
   height="850"
   frameborder="0">
 </iframe>  
@@ -31,13 +33,15 @@
 
 그렇다면 「청소년 기본법」 제정이 촉발한 이러한 키워드 변화는 중퇴자 혹은 학교 밖 청소년에 대한 사회적 인식에 어떤 변화를 가져왔을까? 이들을 지칭하는 지배적인 키워드가 변화함에 따라 사회적 인식 역시 달라졌다고 볼 수 있을까? 이를 살펴보기 위해 본 연구는 **빅카인즈 연관어 분석 시스템**을 활용하여, 1990년부터 2024년까지의 뉴스 데이터를 5년 단위로 구분하고 연관어 변화의 흐름을 분석하고자 한다.
 <br />
+
 --
+
 <br />
 <br />
 <iframe
   src="https://public.tableau.com/views/_17657315189090/1?:language=ko-KR&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link?:showVizHome=no&embed=true"
   width="100%"
-  height="850"
+  height="800"
   frameborder="0">
 </iframe>  
 <br />
@@ -60,7 +64,9 @@
 ‘정책/지원’ 범주의 경우, 2015년을 기점으로 관련 논의와 키워드 사용이 본격적으로 활성화되기 시작했음을 알 수 있다.
 <br />
 <br />
+
 ---
+
 <br />
 <br />
 ## 학교 밖 청소년 개요
@@ -82,7 +88,9 @@
 ‘기관/단체’ 범주의 변화가 2005~2009년경부터 나타나기 시작했다면, 이에 따른 ‘정책/지원’의 변화는 2010년대에 들어 본격화된다. 특히 **‘학업중단 숙려제’**의 도입은 ‘학교 밖 청소년’이라는 키워드 사용량 증가에 영향을 미친 주요 요인으로 추정된다. 과거와 비교할 때, 이전에는 ‘정책/지원’이 비교적 추상적인 수준에서 논의되었다면, 최근에는 보다 구체적이고 명시적인 정책과 지원 제도를 의미하는 방향으로 변화하였음을 알 수 있다.
 <br />
 <br />
+
 ---
+
 <br />
 2025-2 데이터스토리텔링 
 미디어아트 이서연
