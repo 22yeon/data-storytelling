@@ -1,19 +1,90 @@
 ---
 ---
 
+/* =========================================================
+   1. Tactile 테마 기본 CSS 로드
+   ========================================================= */
 @import "{{ site.theme }}";
 
-/* ✅ 페이지 본문 폭 넓히기 (기본 620px → 더 넓게) */
+
+/* =========================================================
+   2. 본문 레이아웃 폭 설정 (본문은 기존보다만 넓힘)
+   ========================================================= */
+/* Tactile 테마의 핵심 병목: .inner */
 .inner {
-  width: 1100px;      /* 원하는 값으로 조절 */
-  max-width: 92vw;    /* 화면이 작을 땐 자동으로 줄어들게 */
+  width: 1100px;      /* 본문 폭 */
+  max-width: 92vw;    /* 작은 화면 대응 */
   margin: 0 auto;
 }
 
-/* ✅ 모바일 구간은 원래 테마처럼 퍼센트 유지 */
+/* 메인 콘텐츠 영역 정렬 보정 */
+#main_content,
+section,
+article {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================================================
+   3. Markdown ### 소제목(h3) 색상 변경
+   ========================================================= */
+#main_content h3,
+.inner h3 {
+  color: #000000;     /* 검은색 */
+}
+
+/* h3 안에 링크가 있을 경우 대비 */
+#main_content h3 a,
+.inner h3 a {
+  color: #000000;
+}
+
+
+/* =========================================================
+   4. iframe만 본문 폭을 벗어나 1800px로 확장
+   ========================================================= */
+/* 기본 iframe 설정 */
+#main_content iframe {
+  display: block;
+  width: 1800px;       /* ✅ iframe 목표 폭 */
+  max-width: 1800px;
+  border: none;
+}
+
+/* 본문(.inner) 중심 기준으로 가운데 정렬 */
+#main_content iframe {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 화면이 1800px보다 작을 경우: 화면 폭에 맞춤 */
+@media only screen and (max-width: 1800px) {
+  #main_content iframe {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
+
+/* =========================================================
+   5. 모바일 구간: Tactile 기본 동작 유지
+   ========================================================= */
 @media only screen and (max-width: 767px) {
-  .inner {
+  .inner,
+  #main_content,
+  section,
+  article {
     width: 94%;
     max-width: 94%;
+  }
+
+  #main_content iframe {
+    width: 100vw;
+    max-width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
